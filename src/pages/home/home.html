@@ -1,0 +1,53 @@
+
+ <!--<ion-header>
+
+  <ion-toolbar color="light">
+    
+    <img start class="nav-logo" src="../../assets/img-custom/coffee.png" />
+  <ion-title left>
+    Login
+  </ion-title>
+  </ion-toolbar>
+
+</ion-header> -->
+
+<ion-content class="login-content" padding>
+   <ion-row class="logo-row">
+    <ion-col></ion-col>
+    <ion-col width-67>
+      <img class="login-img" src="../../assets/img-custom/logoLow.png" />
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <div class="login-box">
+        <form (ngSubmit)="login(usercreds)" #loginForm="ngForm">
+
+     <ion-row>
+          <ion-col>
+<ion-list inset>
+      <ion-item>
+          <ion-input name="email" [(ngModel)] = "usercreds.email" type="email" placeholder="Email" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input [(ngModel)] = "usercreds.password" type="password" placeholder="Password" name="password" required></ion-input>
+      </ion-item>
+  </ion-list>
+   </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="signin-col">
+  <button color="secondary" icon-only full [disabled]="!loginForm.form.valid" class="submit-btn" ion-button type="submit"><ion-icon name="unlock"> </ion-icon> Login</button>
+  </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="signup-col"> 
+  <button ion-button icon-only full color="primary" class="register-btn" (click)="signup()"><ion-icon name="person-add"></ion-icon>
+  Create New Account
+    
+  </button>
+   </ion-col>
+        </ion-row> 
+              
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,17 @@
+.page-front {
+    background: 
+        linear-gradient(90deg, #7E898F 0%, #636C75 100%), 
+        radial-gradient(at top, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.55) 100%), 
+        radial-gradient(at top, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.08) 63%);
+background-blend-mode: multiply, screen;
+}
+
+     .submit-btn {
+       width: 48%;
+       height: 30%;
+       font-size: 50px;
+       margin-top: 10px;
+       color: #ffffff;
+       border-radius: 5px !important;
+       //border: 1px solid #ffffff;
+     }

@@ -1,0 +1,31 @@
+<!--
+  Generated template for the Login page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-toolbar color="light">
+    <button icon-only ion-button menu-toggle="" start><ion-icon name="menu"></ion-icon>
+    </button>
+    
+  </ion-toolbar>
+
+</ion-header>
+<ion-content class="page-front" padding>
+<h4>Welcome back, {{username}} </h4>
+<ion-row>
+  <ion-item>
+    <img class="user-avatar" src='{{picture}}'/>
+  </ion-item>
+</ion-row>
+    <button ion-button class="" (click)="logout()">Logout</button>
+    
+    <br />
+    <button ion-button icon-only color="secondary" class="submit-btn" (click)="notifications()"><ion-icon name="alert"></ion-icon><br /></button>
+    <button ion-button icon-only color="danger" class="submit-btn" (click)="search()"><ion-icon name="search"></ion-icon><br /> </button><br />
+    <button ion-button icon-only color="primary" class="submit-btn" (click)="chat()"><ion-icon name="chatboxes"></ion-icon><br /></button>
+    <button ion-button icon-only color="dark" class="submit-btn" (click)="calendar()"><ion-icon name="calendar"></ion-icon><br /></button>
+    
+</ion-content>
