@@ -1,4 +1,6 @@
 # ionic2-login
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Beatons/ionic2-login.svg)](https://greenkeeper.io/)
 Ionic 2 application login with basic auth
 
 
